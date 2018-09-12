@@ -22,79 +22,93 @@ function getVF(n, opt_precision) {
 $provide.value("$locale", {
   "DATETIME_FORMATS": {
     "AMPMS": [
-      "saaku",
-      "carra"
+      "AM",
+      "PM"
     ],
     "DAY": [
-      "Acaada",
-      "Etleeni",
-      "Talaata",
-      "Arbaqa",
-      "Kamiisi",
-      "Gumqata",
-      "Sabti"
+      "Sande",
+      "Orwokubanza",
+      "Orwakabiri",
+      "Orwakashatu",
+      "Orwakana",
+      "Orwakataano",
+      "Orwamukaaga"
     ],
     "ERANAMES": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
+      "Kurisito Atakaijire",
+      "Kurisito Yaijire"
     ],
     "ERAS": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
+      "BC",
+      "AD"
     ],
     "FIRSTDAYOFWEEK": 0,
     "MONTH": [
-      "Qunxa Garablu",
-      "Kudo",
-      "Ciggilta Kudo",
-      "Agda Baxis",
-      "Caxah Alsa",
-      "Qasa Dirri",
-      "Qado Dirri",
-      "Liiqen",
-      "Waysu",
-      "Diteli",
-      "Ximoli",
-      "Kaxxa Garablu"
+      "Okwokubanza",
+      "Okwakabiri",
+      "Okwakashatu",
+      "Okwakana",
+      "Okwakataana",
+      "Okwamukaaga",
+      "Okwamushanju",
+      "Okwamunaana",
+      "Okwamwenda",
+      "Okwaikumi",
+      "Okwaikumi na kumwe",
+      "Okwaikumi na ibiri"
     ],
     "SHORTDAY": [
-      "Aca",
-      "Etl",
-      "Tal",
-      "Arb",
-      "Kam",
-      "Gum",
-      "Sab"
+      "SAN",
+      "ORK",
+      "OKB",
+      "OKS",
+      "OKN",
+      "OKT",
+      "OMK"
     ],
     "SHORTMONTH": [
-      "Qun",
-      "Nah",
-      "Cig",
-      "Agd",
-      "Cax",
-      "Qas",
-      "Qad",
-      "Leq",
-      "Way",
-      "Dit",
-      "Xim",
-      "Kax"
+      "KBZ",
+      "KBR",
+      "KST",
+      "KKN",
+      "KTN",
+      "KMK",
+      "KMS",
+      "KMN",
+      "KMW",
+      "KKM",
+      "KNK",
+      "KNB"
+    ],
+    "STANDALONEMONTH": [
+      "Okwokubanza",
+      "Okwakabiri",
+      "Okwakashatu",
+      "Okwakana",
+      "Okwakataana",
+      "Okwamukaaga",
+      "Okwamushanju",
+      "Okwamunaana",
+      "Okwamwenda",
+      "Okwaikumi",
+      "Okwaikumi na kumwe",
+      "Okwaikumi na ibiri"
     ],
     "WEEKENDRANGE": [
       5,
       6
     ],
-    "fullDate": "EEEE, MMMM dd, y",
-    "longDate": "dd MMMM y",
-    "medium": "dd-MMM-y h:mm:ss a",
-    "mediumDate": "dd-MMM-y",
+    "fullDate": "EEEE, d MMMM y",
+    "longDate": "d MMMM y",
+    "medium": "d MMM y h:mm:ss a",
+    "mediumDate": "d MMM y",
     "mediumTime": "h:mm:ss a",
-    "short": "dd/MM/yy h:mm a",
-    "shortDate": "dd/MM/yy",
+    "short": "dd/MM/y h:mm a",
+    "shortDate": "dd/MM/y",
     "shortTime": "h:mm a"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "Birr",
+    "CURRENCY_SYM": "UGX",
     "DECIMAL_SEP": ".",
     "GROUP_SEP": ",",
     "PATTERNS": [
@@ -115,14 +129,15 @@ $provide.value("$locale", {
         "maxFrac": 2,
         "minFrac": 2,
         "minInt": 1,
-        "negPre": "\u00a4-",
+        "negPre": "-\u00a4",
         "negSuf": "",
         "posPre": "\u00a4",
         "posSuf": ""
       }
     ]
   },
-  "id": "aa",
+  "id": "cgg-ug",
+  "localeID": "cgg_UG",
   "pluralCat": function(n, opt_precision) {  var i = n | 0;  var vf = getVF(n, opt_precision);  if (i == 1 && vf.v == 0) {    return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);

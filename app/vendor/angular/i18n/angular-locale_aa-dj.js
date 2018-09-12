@@ -42,7 +42,7 @@ $provide.value("$locale", {
       "Yaasuusuk Duma",
       "Yaasuusuk Wadir"
     ],
-    "FIRSTDAYOFWEEK": 0,
+    "FIRSTDAYOFWEEK": 5,
     "MONTH": [
       "Qunxa Garablu",
       "Kudo",
@@ -51,7 +51,7 @@ $provide.value("$locale", {
       "Caxah Alsa",
       "Qasa Dirri",
       "Qado Dirri",
-      "Liiqen",
+      "Leqeeni",
       "Waysu",
       "Diteli",
       "Ximoli",
@@ -94,7 +94,7 @@ $provide.value("$locale", {
     "shortTime": "h:mm a"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "Birr",
+    "CURRENCY_SYM": "Fdj",
     "DECIMAL_SEP": ".",
     "GROUP_SEP": ",",
     "PATTERNS": [
@@ -122,7 +122,7 @@ $provide.value("$locale", {
       }
     ]
   },
-  "id": "aa",
+  "id": "aa-dj",
   "pluralCat": function(n, opt_precision) {  var i = n | 0;  var vf = getVF(n, opt_precision);  if (i == 1 && vf.v == 0) {    return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);

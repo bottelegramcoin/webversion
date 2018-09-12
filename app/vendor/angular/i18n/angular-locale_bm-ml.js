@@ -22,79 +22,66 @@ function getVF(n, opt_precision) {
 $provide.value("$locale", {
   "DATETIME_FORMATS": {
     "AMPMS": [
-      "saaku",
-      "carra"
+      "AM",
+      "PM"
     ],
     "DAY": [
-      "Acaada",
-      "Etleeni",
-      "Talaata",
-      "Arbaqa",
-      "Kamiisi",
-      "Gumqata",
-      "Sabti"
+      "kari",
+      "nt\u025bn\u025b",
+      "tarata",
+      "araba",
+      "alamisa",
+      "juma",
+      "sibiri"
     ],
-    "ERANAMES": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
-    ],
-    "ERAS": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
-      "Qunxa Garablu",
-      "Kudo",
-      "Ciggilta Kudo",
-      "Agda Baxis",
-      "Caxah Alsa",
-      "Qasa Dirri",
-      "Qado Dirri",
-      "Liiqen",
-      "Waysu",
-      "Diteli",
-      "Ximoli",
-      "Kaxxa Garablu"
+      "zanwuye",
+      "feburuye",
+      "marisi",
+      "awirili",
+      "m\u025b",
+      "zuw\u025bn",
+      "zuluye",
+      "uti",
+      "s\u025btanburu",
+      "\u0254kut\u0254buru",
+      "nowanburu",
+      "desanburu"
     ],
     "SHORTDAY": [
-      "Aca",
-      "Etl",
-      "Tal",
-      "Arb",
-      "Kam",
-      "Gum",
-      "Sab"
+      "kar",
+      "nt\u025b",
+      "tar",
+      "ara",
+      "ala",
+      "jum",
+      "sib"
     ],
     "SHORTMONTH": [
-      "Qun",
-      "Nah",
-      "Cig",
-      "Agd",
-      "Cax",
-      "Qas",
-      "Qad",
-      "Leq",
-      "Way",
-      "Dit",
-      "Xim",
-      "Kax"
+      "zan",
+      "feb",
+      "mar",
+      "awi",
+      "m\u025b",
+      "zuw",
+      "zul",
+      "uti",
+      "s\u025bt",
+      "\u0254ku",
+      "now",
+      "des"
     ],
-    "WEEKENDRANGE": [
-      5,
-      6
-    ],
-    "fullDate": "EEEE, MMMM dd, y",
-    "longDate": "dd MMMM y",
-    "medium": "dd-MMM-y h:mm:ss a",
-    "mediumDate": "dd-MMM-y",
-    "mediumTime": "h:mm:ss a",
-    "short": "dd/MM/yy h:mm a",
-    "shortDate": "dd/MM/yy",
-    "shortTime": "h:mm a"
+    "fullDate": "EEEE d MMMM y",
+    "longDate": "d MMMM y",
+    "medium": "d MMM, y HH:mm:ss",
+    "mediumDate": "d MMM, y",
+    "mediumTime": "HH:mm:ss",
+    "short": "d/M/y HH:mm",
+    "shortDate": "d/M/y",
+    "shortTime": "HH:mm"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "Birr",
+    "CURRENCY_SYM": "CFA",
     "DECIMAL_SEP": ".",
     "GROUP_SEP": ",",
     "PATTERNS": [
@@ -122,7 +109,7 @@ $provide.value("$locale", {
       }
     ]
   },
-  "id": "aa",
+  "id": "bm-ml",
   "pluralCat": function(n, opt_precision) {  var i = n | 0;  var vf = getVF(n, opt_precision);  if (i == 1 && vf.v == 0) {    return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);

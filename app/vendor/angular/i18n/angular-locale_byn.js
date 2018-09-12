@@ -22,69 +22,56 @@ function getVF(n, opt_precision) {
 $provide.value("$locale", {
   "DATETIME_FORMATS": {
     "AMPMS": [
-      "saaku",
-      "carra"
+      "\u134b\u12f1\u1235 \u1303\u1265",
+      "\u134b\u12f1\u1235 \u12f0\u121d\u1262"
     ],
     "DAY": [
-      "Acaada",
-      "Etleeni",
-      "Talaata",
-      "Arbaqa",
-      "Kamiisi",
-      "Gumqata",
-      "Sabti"
+      "\u1230\u1295\u1260\u122d \u1245\u12f3\u12c5",
+      "\u1230\u1291",
+      "\u1230\u120a\u131d",
+      "\u1208\u1313 \u12c8\u122a \u1208\u1265\u12cb",
+      "\u12a3\u121d\u12f5",
+      "\u12a3\u122d\u1265",
+      "\u1230\u1295\u1260\u122d \u123d\u1313\u12c5"
     ],
-    "ERANAMES": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
-    ],
-    "ERAS": [
-      "Yaasuusuk Duma",
-      "Yaasuusuk Wadir"
-    ],
-    "FIRSTDAYOFWEEK": 0,
     "MONTH": [
-      "Qunxa Garablu",
-      "Kudo",
-      "Ciggilta Kudo",
-      "Agda Baxis",
-      "Caxah Alsa",
-      "Qasa Dirri",
-      "Qado Dirri",
-      "Liiqen",
-      "Waysu",
-      "Diteli",
-      "Ximoli",
-      "Kaxxa Garablu"
+      "\u120d\u12f0\u1275\u122a",
+      "\u12ab\u1265\u12bd\u1265\u1272",
+      "\u12ad\u1265\u120b",
+      "\u134b\u1305\u12ba\u122a",
+      "\u12ad\u1262\u1245\u122a",
+      "\u121d\u12aa\u12a4\u120d \u1275\u131f\u1292\u122a",
+      "\u12b0\u122d\u12a9",
+      "\u121b\u122d\u12eb\u121d \u1275\u122a",
+      "\u12eb\u12b8\u1292 \u1218\u1233\u1245\u1208\u122a",
+      "\u1218\u1270\u1209",
+      "\u121d\u12aa\u12a4\u120d \u1218\u123d\u12c8\u122a",
+      "\u1270\u1215\u1233\u1235\u122a"
     ],
     "SHORTDAY": [
-      "Aca",
-      "Etl",
-      "Tal",
-      "Arb",
-      "Kam",
-      "Gum",
-      "Sab"
+      "\u1230/\u1245",
+      "\u1230\u1291",
+      "\u1230\u120a\u131d",
+      "\u1208\u1313",
+      "\u12a3\u121d\u12f5",
+      "\u12a3\u122d\u1265",
+      "\u1230/\u123d"
     ],
     "SHORTMONTH": [
-      "Qun",
-      "Nah",
-      "Cig",
-      "Agd",
-      "Cax",
-      "Qas",
-      "Qad",
-      "Leq",
-      "Way",
-      "Dit",
-      "Xim",
-      "Kax"
+      "\u120d\u12f0\u1275",
+      "\u12ab\u1265\u12bd",
+      "\u12ad\u1265\u120b",
+      "\u134b\u1305\u12ba",
+      "\u12ad\u1262\u1245",
+      "\u121d/\u1275",
+      "\u12b0\u122d",
+      "\u121b\u122d\u12eb",
+      "\u12eb\u12b8\u1292",
+      "\u1218\u1270\u1209",
+      "\u121d/\u121d",
+      "\u1270\u1215\u1233"
     ],
-    "WEEKENDRANGE": [
-      5,
-      6
-    ],
-    "fullDate": "EEEE, MMMM dd, y",
+    "fullDate": "EEEE\u1361 dd MMMM \u130d\u122d\u130b y G",
     "longDate": "dd MMMM y",
     "medium": "dd-MMM-y h:mm:ss a",
     "mediumDate": "dd-MMM-y",
@@ -94,7 +81,7 @@ $provide.value("$locale", {
     "shortTime": "h:mm a"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "Birr",
+    "CURRENCY_SYM": "Nfk",
     "DECIMAL_SEP": ".",
     "GROUP_SEP": ",",
     "PATTERNS": [
@@ -122,7 +109,7 @@ $provide.value("$locale", {
       }
     ]
   },
-  "id": "aa",
+  "id": "byn",
   "pluralCat": function(n, opt_precision) {  var i = n | 0;  var vf = getVF(n, opt_precision);  if (i == 1 && vf.v == 0) {    return PLURAL_CATEGORY.ONE;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
